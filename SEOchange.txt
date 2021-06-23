@@ -1,0 +1,11 @@
+Title a los links internos - anclas de la web
+
+Alt a las imagenes
+
+Viewport zoom
+
+Loading="lazy" en las imagenes para mejorar la carga
+
+Se suma los meta keywords y description
+
+Meta property

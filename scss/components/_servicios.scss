@@ -1,0 +1,33 @@
+@import '../base/variables';
+@import '../base/extend';
+@import '../base/mixin';
+
+#servicios {
+    background-color: nth($color,1);
+
+    .s-destacado {
+        @include encabezado (white, 2rem);
+        padding-top: 100px;
+    }
+    
+    .s-texto {
+        margin: 0 auto;
+        margin-top: 50px;
+        width: 600px;
+        text-align: center;
+
+
+        h2 {
+            @include raleway (12rem);
+            margin-bottom: 10px
+        }
+        
+        p {
+            @include raleway (6rem);
+            color: nth($color,5);
+            font-weight: lighter;
+            line-height: 10rem;
+        }
+    }
+
+}

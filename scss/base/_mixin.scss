@@ -1,0 +1,58 @@
+@import '../base/variables';
+
+@mixin transform ($transform) {
+    -moz-transform: $transform;
+    -o-transform: $transform;
+    -webkit-transform: $transform;
+    transform: $transform;
+}
+
+@mixin animation ($animation) {
+    -moz-animation: $animation;
+    -o-animation: $animation;
+    -webkit-animation: $animation;
+    animation: $animation;
+    
+}
+
+@mixin text-position-left ($rel-abso, $top) {
+    position: $rel-abso;
+    top: $top;
+    left: 40px; 
+}
+
+@mixin text-position-right ($rel-abso, $top) {
+    position: $rel-abso;
+    top: $top;
+    right: 40px;
+}
+
+/* revisar por que cuando reemplazo el extend en servicios
+se rompe la estructura */
+@mixin encabezado ($color, $spacing) {
+    color: $color;
+    font-size: nth($f-size,1);
+    font-family: nth($f-family,1);
+    padding-top: 100px;
+    font-weight: 500;
+    letter-spacing: $spacing;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+/* variable para manejar una fuente y tamaño */
+@import '../base/variables';
+@mixin raleway ($size) {
+    font-family: nth($f-family,1);
+    font-size: $size;
+}
+@mixin yeseva ($size) {
+    font-family: nth($f-family,2);
+    font-size: $size;
+}

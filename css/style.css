@@ -1,0 +1,344 @@
+@charset "UTF-8";
+/* IMPORTACION PARCIALES BASE */
+* {
+  margin: 0;
+  padding: 0;
+  user-select: none;
+}
+
+html {
+  font-size: 2px;
+}
+html a {
+  text-decoration: none;
+}
+html h2 {
+  font-family: "yeseva one", cursive;
+  font-size: 15rem;
+  color: #4f4f4f;
+}
+html li {
+  list-style: none;
+}
+html .tag-graphic {
+  font-family: "Raleway";
+  color: #272727;
+  font-size: 5rem;
+  font-weight: 500;
+  letter-spacing: 2rem;
+  position: fixed;
+  top: 40px;
+  right: 40px;
+  float: right;
+}
+
+/* error 404 */
+/* revisar por que cuando reemplazo el extend en servicios
+se rompe la estructura */
+/* variable para manejar una fuente y tamaño */
+.cuerpo {
+  background-color: #B2E0F5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.cuerpo img {
+  width: 40%;
+  margin: 50px;
+}
+.cuerpo .titleError {
+  font-family: "Raleway";
+  font-size: 14rem;
+  color: white;
+}
+.cuerpo .descriptionError {
+  margin-top: 10px;
+  font-family: "Raleway";
+  font-size: 12rem;
+  color: #b8b8b8;
+  font-size: 12rem;
+}
+.cuerpo .backHome {
+  margin-top: 70px;
+  font-family: "Raleway";
+  font-size: 12rem;
+  color: white;
+  font-size: 7rem;
+  background-color: crimson;
+  padding: 10px;
+  border-radius: 10%;
+}
+
+/* IMPORTACION COMPONENTES */
+/* revisar por que cuando reemplazo el extend en servicios
+se rompe la estructura */
+/* variable para manejar una fuente y tamaño */
+html {
+  /* HOVER CUANDO EL MOUSE PASA POR EL HTML */
+}
+html #inicio {
+  background-image: url();
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+}
+html #inicio .menu {
+  font-family: "Raleway";
+  font-size: 5rem;
+  letter-spacing: 2rem;
+  line-height: 12rem;
+  position: absolute;
+  top: 40px;
+  left: 40px;
+}
+html #inicio .menu ul li a {
+  color: #272727;
+}
+html #inicio .menu ul li a:hover {
+  transition-duration: 1s;
+  color: #b8b8b8;
+  letter-spacing: 10rem;
+  margin-left: 18rem;
+}
+html #inicio .intro {
+  color: #b8b8b8;
+  margin: 0 auto;
+  text-align: center;
+  max-width: 400px;
+  padding: 400px 0;
+}
+html #inicio .intro h1 {
+  font-family: "Yeseva one";
+  font-size: 16rem;
+}
+html #inicio .intro p {
+  font-family: "Raleway";
+  font-size: 7rem;
+  margin-top: 10px;
+  letter-spacing: 0.7rem;
+}
+html #inicio .intro img {
+  margin-top: 400px;
+  width: 10%;
+}
+html:hover .dg {
+  animation-name: changeColorName;
+  animation-duration: 4s;
+  animation-timing-function: lineal;
+  animation-iteration-count: infinite;
+}
+@keyframes changeColorName {
+  0% {
+    color: white;
+  }
+  50% {
+    color: crimson;
+  }
+  100% {
+    color: white;
+  }
+}
+html .resp-menu {
+  display: none;
+}
+@media (min-width: 400px) and (max-width: 960px) {
+  html .tag-graphic {
+    position: relative;
+    right: 0;
+    float: none;
+    text-align: center;
+  }
+  html .menu {
+    text-align: center;
+    position: relative !important;
+    top: 60px !important;
+    left: auto !important;
+  }
+  html .intro {
+    padding: 200px 0 !important;
+  }
+}
+
+#conoceme .c-text {
+  width: 300px;
+  font-family: "Raleway";
+  font-weight: lighter;
+  font-size: 6rem;
+  text-align: left;
+  line-height: 10rem;
+}
+
+#conoceme .c-encabezado {
+  color: crimson;
+  font-size: 5rem;
+  font-family: "Raleway";
+  padding-top: 100px;
+  font-weight: 500;
+  letter-spacing: 4rem;
+  text-align: center;
+  /* TESTEAR 
+  position: relative;
+  left: 300px;
+  float: left; */
+}
+#conoceme .c-margin {
+  margin: 100px 0px 300px 0px;
+}
+#conoceme .c-imagen {
+  border-radius: 40px;
+  /* TESTEAR
+  solucionar que se mueva la imagen tanto */
+}
+#conoceme .c-text {
+  margin-left: 30px;
+}
+#conoceme .c-text ul {
+  color: crimson;
+  display: flex;
+  justify-content: left;
+}
+#conoceme .c-text ul li {
+  margin: 20px 20px 0px 0px;
+  font-weight: 300;
+  font-size: 5rem;
+}
+#conoceme .c-bold {
+  font-weight: 600;
+}
+
+#conoceme .c-text {
+  width: 300px;
+  font-family: "Raleway";
+  font-weight: lighter;
+  font-size: 6rem;
+  text-align: left;
+  line-height: 10rem;
+}
+
+/* revisar por que cuando reemplazo el extend en servicios
+se rompe la estructura */
+/* variable para manejar una fuente y tamaño */
+#servicios {
+  background-color: black;
+}
+#servicios .s-destacado {
+  color: white;
+  font-size: 5rem;
+  font-family: "Raleway";
+  padding-top: 100px;
+  font-weight: 500;
+  letter-spacing: 2rem;
+  text-align: center;
+  padding-top: 100px;
+}
+#servicios .s-texto {
+  margin: 0 auto;
+  margin-top: 50px;
+  width: 600px;
+  text-align: center;
+}
+#servicios .s-texto h2 {
+  font-family: "Raleway";
+  font-size: 12rem;
+  margin-bottom: 10px;
+}
+#servicios .s-texto p {
+  font-family: "Raleway";
+  font-size: 6rem;
+  color: white;
+  font-weight: lighter;
+  line-height: 10rem;
+}
+
+#habilidades {
+  background-color: black;
+}
+#habilidades h2 {
+  color: white;
+  font-size: 5rem;
+  font-family: "Raleway";
+  padding-top: 100px;
+  font-weight: 500;
+  letter-spacing: 2rem;
+  text-align: center;
+}
+#habilidades .h-list {
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 100px;
+}
+#habilidades .changeColor p {
+  font-family: "Raleway";
+  color: rgba(255, 255, 255, 0.712);
+  font-size: 6rem;
+  text-align: left;
+  /* transicion */
+  transition-property: all;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in;
+}
+#habilidades .changeColor p:hover {
+  transform: scale(2);
+  color: #ff1d43;
+}
+
+#porfolio {
+  height: auto;
+}
+#porfolio .p-destacado {
+  color: crimson;
+  font-size: 5rem;
+  font-family: "Raleway";
+  padding-top: 100px;
+  font-weight: 500;
+  letter-spacing: 4rem;
+  text-align: center;
+}
+#porfolio .p-margin {
+  margin: 100px 0px;
+}
+#porfolio .p-margin .p-alinear {
+  display: flex;
+  justify-content: center;
+}
+#porfolio .p-margin .p-alinear a {
+  transition-duration: 1s;
+  transition-timing-function: 1s;
+}
+#porfolio .p-margin .p-alinear a:hover {
+  position: relative;
+  z-index: 1;
+  -moz-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+  border: 5%;
+}
+
+#contacto {
+  background-color: black;
+}
+
+.con-text {
+  font-size: 8rem;
+  width: 600px;
+  height: 600px;
+}
+
+#footer {
+  font-family: "Raleway";
+  font-size: 6rem;
+  background-color: black;
+  font-size: 6rem;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 50px;
+}
+#footer a {
+  color: white;
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,92 @@
+@import '../base/variables';
+@import '../base/mixin';
+@import '../base/map';
+
+html {
+    #inicio {
+        background-image: url();
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+
+        .menu {
+            font-family: nth($f-family,1);
+            font-size: nth($f-size,1);
+            letter-spacing: map-get($ls, ls-80);
+            line-height: 12rem;
+
+            @include text-position-left (absolute, 40px); 
+
+            ul {
+                li {
+                    a {
+                        color: nth($color,2);
+                            &:hover {
+                                transition-duration: 1s;
+                                color: nth($color, 3);
+                                letter-spacing: 10rem;
+                                margin-left: 18rem;
+                            }
+                    }
+                }
+            }
+        }
+
+        .intro {
+            color: nth($color, 3);
+            margin: 0 auto;
+            text-align: center;
+            max-width: 400px;
+            padding: 400px 0;
+            
+                h1 {
+                    @include yeseva (nth($f-size,3));
+                }
+                p {
+                    @include raleway (nth($f-size,2));
+                    margin-top: 10px;
+                    letter-spacing: map-get($ls, ls-40);
+                }
+                img {
+                    margin-top: 400px;
+                    width: 10%;
+                }
+        }
+    }
+
+    /* HOVER CUANDO EL MOUSE PASA POR EL HTML */
+    &:hover .dg {
+        animation-name: changeColorName;
+        animation-duration: 4s;
+        animation-timing-function: lineal;
+        animation-iteration-count: infinite;
+    }
+    @keyframes changeColorName {
+        0% {color: white;}
+        50% {color: nth($color,4);}
+        100% {color: white;}
+    }
+    .resp-menu {
+        display: none;
+    }
+
+    @media (min-width:400px) and (max-width:960px) {
+        .tag-graphic {
+            position: relative;
+            right: 0;
+            float: none;
+            text-align: center; 
+        }
+        .menu {
+            text-align: center;
+            position: relative !important;
+            top: 60px !important;
+            left: auto !important;
+        }
+        .intro {
+            padding: 200px 0 !important;
+        }
+    }
+
+
+}

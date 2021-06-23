@@ -1,0 +1,16 @@
+/* IMPORTACION PARCIALES BASE */
+@import 'base/inicio';
+@import 'base/variables';
+
+/* error 404 */
+@import 'components/error';
+
+/* IMPORTACION COMPONENTES */
+@import 'components/head';
+@import 'components/conoceme';
+@import 'components/servicios';
+@import 'components/habilidades';
+@import 'components/porfolio';
+@import 'components/contacto';
+@import 'components/footer';
+

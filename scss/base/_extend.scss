@@ -1,0 +1,19 @@
+@import '../base/variables';
+
+%encabezado {
+    color: nth($color,4);
+    font-size: nth($f-size,1);
+    font-family: nth($f-family,1);
+    margin-top: 100px;
+    letter-spacing: 4rem;
+    text-align: center;
+}
+
+%text {
+    width: 300px;
+    font-family: 'Raleway';
+    font-weight: lighter;
+    font-size: 6rem;
+    text-align: left;
+    line-height: 10rem;
+}

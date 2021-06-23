@@ -1,0 +1,40 @@
+@import '../base/variables';
+@import '../base/mixin';
+
+
+.cuerpo {
+    background-color: #B2E0F5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    img {
+        width: 40%;
+        margin: 50px;
+    }
+
+    .titleError {
+        @include raleway (14rem);
+        color: nth($color,5);
+    }
+    
+    .descriptionError {
+        margin-top: 10px;
+        @include raleway (nth($f-size,4));
+        color: nth($color,3);
+        font-size: nth($f-size,4);
+    }
+
+    .backHome {
+        margin-top: 70px;
+        @include raleway (nth($f-size,4));
+        color: nth($color,5);
+        font-size: nth($f-size,2);
+        background-color: nth($color,4);
+        padding: 10px;
+        border-radius: 10%;
+    }
+
+
+
+}

@@ -1,0 +1,44 @@
+@import '../base/extend';
+
+#conoceme {
+    .c-encabezado {
+        @include encabezado (crimson, 4rem);
+
+        /* TESTEAR 
+        position: relative;
+        left: 300px;
+        float: left; */
+    }
+
+    .c-margin {
+        margin: 100px 0px 300px 0px;
+    }
+
+    .c-imagen {
+        border-radius: 40px;
+
+        /* TESTEAR
+        solucionar que se mueva la imagen tanto */
+    }
+
+    .c-text {
+        @extend %text;
+        margin-left: 30px;
+
+        ul {
+            color: nth($color,4);
+            display: flex;
+            justify-content: left;
+            
+            li {
+                margin: 20px 20px 0px 0px;
+                font-weight: 300;
+                font-size: 5rem;
+            }
+        }
+    }
+
+    .c-bold {
+        font-weight: 600;
+    }
+}
