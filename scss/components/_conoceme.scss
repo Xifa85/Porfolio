@@ -2,8 +2,8 @@
 
 #conoceme {
     .c-encabezado {
-        @include encabezado (crimson, 4rem);
-
+        @include encabezado (rgb(214, 81, 81), 5rem);
+        font-size: 15rem;
         /* TESTEAR 
         position: relative;
         left: 300px;
@@ -24,9 +24,10 @@
     .c-text {
         @extend %text;
         margin-left: 30px;
+        color: nth($color,3);
 
         ul {
-            color: nth($color,4);
+            color: nth($color,3);
             display: flex;
             justify-content: left;
             

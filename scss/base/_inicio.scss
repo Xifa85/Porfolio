@@ -8,7 +8,7 @@
 
 html {
     font-size: 2px;
-    
+
     a {text-decoration: none;}
     
     h2 {
@@ -33,5 +33,9 @@ html {
 
         
     }
-    
+    /* gradient scroll */
+    body {
+        min-height: 3780px; /* Used to enable scrolling */
+    background: linear-gradient(55deg, #414bce 0%, #480f7c 51%, #e24c38 85%);
+    }
 }

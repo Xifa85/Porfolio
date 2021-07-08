@@ -11,16 +11,16 @@ html {
 
         .menu {
             font-family: nth($f-family,1);
-            font-size: nth($f-size,1);
+            font-size: nth($f-size,2);
             letter-spacing: map-get($ls, ls-80);
-            line-height: 12rem;
+            line-height: 20rem;
 
             @include text-position-left (absolute, 40px); 
 
             ul {
                 li {
                     a {
-                        color: nth($color,2);
+                        color: nth($color,6);
                             &:hover {
                                 transition-duration: 1s;
                                 color: nth($color, 3);

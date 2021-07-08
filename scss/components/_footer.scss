@@ -1,17 +1,17 @@
 #footer {
     @include raleway (6rem);
-    background-color: black;
     font-size: 6rem;
-    color: nth($color,5);
+    color: nth($color,6);
     
     display: flex;
-    justify-content: space-between;
     padding: 50px;
-
+    justify-content: space-between;
+    max-width: 600px;
+    margin: 0 auto;
    
 
     a {
-        color: nth($color,5);
+        color: nth($color,6);
         text-decoration: none;
     }
 }
